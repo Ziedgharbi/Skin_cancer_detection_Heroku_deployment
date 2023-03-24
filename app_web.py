@@ -31,7 +31,6 @@ html_directory=project_directory+'html/'
 directory_uploaded_file=project_directory+'image/'
 allowed_extension=set(['png', 'jpg', 'jpeg'])
 
-
 app=Flask(__name__, template_folder=html_directory, static_folder=html_directory+"index_files")
 
 app.secret_key="secret"
@@ -86,8 +85,6 @@ def prediction(img):
     
     model_list=["rgb_h", "gray_L_HE", "gray_L_CLAHE", "gray_HE", "gray","n"]
 
-
-
     rst=[]
     for model in model_list :
         
@@ -107,8 +104,6 @@ def prediction(img):
     
     return(cancer_class[rslt])
     
-   
-
 @app.route('/')
 def home():
     return render_template('index.html')
