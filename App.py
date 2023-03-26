@@ -31,7 +31,6 @@ image_directory= data_directory +"images/"
 data_transorfmed_directory=project_directory+'transformed_data/'
 model_directory=project_directory+"model/"
 
-
 isExist = os.path.exists(data_transorfmed_directory)
 if not isExist:
 
@@ -64,7 +63,6 @@ for i in range(15):
     plt.imshow(data.image_array.iloc[random[i]])
     plt.title(data.dx.iloc[i])
 plt.show()
-
 
 # some descreptive statistic of classes 
 data.dx.value_counts().plot(kind='pie') # data are unbalanced, we should balance it
