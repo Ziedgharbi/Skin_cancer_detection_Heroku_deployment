@@ -79,7 +79,6 @@ class_cancer=list(classe.keys())
 
 data["target"]=data.dx.map(lambda x : classe[x]  )
 
-
 """------- do somes transformation on image and for each we train a model and voting for rslt ---------"""
 
 # first balance data
@@ -106,8 +105,6 @@ y=tf.keras.utils.to_categorical(y, num_classes=7)
 
 
 # transformation : 5 transformation 
-
-
 def image_transformation(X,y,data_transorfmed_directory) :
     
     # no transofrmation
