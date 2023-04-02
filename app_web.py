@@ -38,7 +38,6 @@ app.config['UPLOAD_FOLDER']= directory_uploaded_file
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.',1)[1].lower() in allowed_extension
 
-
 def image_transformation(img,trans) : 
     # no transformation
     if trans=="n" :
@@ -79,7 +78,6 @@ def image_transformation(img,trans) :
 
     return (img)
 
-
 def prediction(img):
     
     model_list=["rgb_h", "gray_L_HE", "gray_L_CLAHE", "gray_HE", "gray","n"]
@@ -106,7 +104,6 @@ def prediction(img):
 @app.route('/')
 def home():
     return render_template('index.html')
-
 
 
 @app.route("/" , methods=["GET","POST"])
