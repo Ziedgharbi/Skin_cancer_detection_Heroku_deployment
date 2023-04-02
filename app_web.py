@@ -23,7 +23,6 @@ from werkzeug.utils import secure_filename
 import urllib.request
 
 
-
 project_directory= "C:/Users/pc/Nextcloud/Python/GITHUB/Skin_cancer_detection_Heroku_deployment/"
 model_directory=project_directory+"model/"
 html_directory=project_directory+'html/'
