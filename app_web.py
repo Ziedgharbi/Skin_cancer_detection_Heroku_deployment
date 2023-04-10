@@ -134,7 +134,6 @@ def predict():
         flash("Only png, jpg and gif extension are allowed")
         return redirect(request.url)
    
-   
 if __name__ == '__main__':
     app.run()
 
