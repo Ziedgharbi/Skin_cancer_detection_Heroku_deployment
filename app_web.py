@@ -91,7 +91,6 @@ def prediction(img):
         r=m.predict(im)
         rst.append(np.argmax(r))
 
-    
     count=[ rst.count(x) for x in range(7)  ] 
     rslt=np.argmax(count)
     
